@@ -9,6 +9,7 @@ export function SplineSceneBasic() {
     <div className="w-full h-full relative">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
+        size={600}
       />
       <div className="relative z-0 w-full h-full">
         <SplineScene 

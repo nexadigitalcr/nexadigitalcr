@@ -5,7 +5,7 @@ import { SplineSceneBasic } from "@/components/ui/code.demo";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 
 const Hero = () => {
-  return <div className="min-h-screen relative">
+  return <div className="min-h-screen relative overflow-hidden">
       {/* 3D Scene as background */}
       <div className="absolute inset-0 w-full h-full">
         <SplineSceneBasic />
