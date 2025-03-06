@@ -1,11 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Sparkles, CircleUserRound, Cloud, Code2 } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
-
 const Hero = () => {
-  return (
-    <div className="min-h-screen relative">
+  return <div className="min-h-screen relative">
       {/* 3D Scene as background */}
       <div className="absolute inset-0 w-full h-full">
         <SplineSceneBasic />
@@ -31,25 +28,13 @@ const Hero = () => {
                 Asistente AI
               </Button>
             </div>
-            <div className="flex flex-wrap gap-12 pt-6 items-center justify-center">
-              <div className="hover-lift group">
-                <CircleUserRound className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
-              </div>
-              <div className="hover-lift group">
-                <Cloud className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
-              </div>
-              <div className="hover-lift group">
-                <Code2 className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
-              </div>
-            </div>
+            
           </div>
           <div className="hidden md:block">
             {/* This div is just to maintain the grid layout */}
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Hero;
