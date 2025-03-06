@@ -6,7 +6,7 @@ const Testimonials = () => {
   const testimonials = [{
     quote: "Nexa Digital nos ayudó a conectar con nuestros clientes de manera innovadora. Su experiencia en IA y desarrollo digital nos permitió modernizar nuestras operaciones y mejorar la experiencia de nuestros viajeros.",
     author: "Jose Mendez",
-    role: "Business Owner"
+    role: "DMC Passport Adventure"
   }, {
     quote: "This app has completely transformed how I manage my finances.",
     author: "Michael Chen",
