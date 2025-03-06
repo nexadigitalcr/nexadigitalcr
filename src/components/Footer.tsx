@@ -1,5 +1,5 @@
 
-import { Facebook, Twitter, Linkedin, MapPin, Mail, Phone } from "lucide-react";
+import { Facebook, Twitter, Linkedin, MapPin, Mail, Phone, Github } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
@@ -19,6 +19,9 @@ const Footer = () => {
               </Button>
               <Button variant="ghost" size="icon" className="hover:bg-white/10">
                 <Facebook className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:bg-white/10">
+                <Github className="w-5 h-5" />
               </Button>
               <Button variant="ghost" size="icon" className="hover:bg-white/10">
                 <Linkedin className="w-5 h-5" />
