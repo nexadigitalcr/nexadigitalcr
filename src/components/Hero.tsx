@@ -1,8 +1,11 @@
-import { MessageSquare, Sparkles } from "lucide-react";
+
+import { MessageSquare, Sparkles, CircleUserRound, Cloud, Code2 } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
 import { GradientButton } from "@/components/ui/gradient-button";
+
 const Hero = () => {
-  return <div className="min-h-screen relative">
+  return (
+    <div className="min-h-screen relative">
       {/* 3D Scene as background */}
       <div className="absolute inset-0 w-full h-full">
         <SplineSceneBasic />
@@ -11,7 +14,7 @@ const Hero = () => {
       {/* Content overlay */}
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4 pt-0">
         <div className="max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 mx-0 px-0 py-[154px]">
+          <div className="space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
               Nexa Digital
             </h1>
@@ -28,10 +31,15 @@ const Hero = () => {
                 Asistente AI
               </GradientButton>
             </div>
-            
-            <div className="flex justify-center pt-10">
-              <div className="animate-float w-24 h-24 transition-all duration-500 hover:scale-110">
-                
+            <div className="flex flex-wrap gap-12 pt-6 items-center justify-center">
+              <div className="gradient-button w-16 h-16 flex items-center justify-center rounded-full hover-lift">
+                <CircleUserRound className="w-8 h-8 text-white transition-colors" />
+              </div>
+              <div className="gradient-button w-16 h-16 flex items-center justify-center rounded-full hover-lift">
+                <Cloud className="w-8 h-8 text-white transition-colors" />
+              </div>
+              <div className="gradient-button-variant w-16 h-16 flex items-center justify-center rounded-full hover-lift">
+                <Code2 className="w-8 h-8 text-white transition-colors" />
               </div>
             </div>
           </div>
@@ -40,6 +48,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Hero;

@@ -1,5 +1,6 @@
 
 import { Facebook, Twitter, Linkedin, MapPin, Mail, Phone, Github } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
@@ -12,18 +13,18 @@ const Footer = () => {
               Transformamos el turismo con inteligencia artificial y diseño digital para crear experiencias innovadoras.
             </p>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <div className="gradient-button w-10 h-10 flex items-center justify-center rounded-full hover-lift">
-                <Twitter className="w-5 h-5 text-white" />
-              </div>
-              <div className="gradient-button w-10 h-10 flex items-center justify-center rounded-full hover-lift">
-                <Facebook className="w-5 h-5 text-white" />
-              </div>
-              <div className="gradient-button-variant w-10 h-10 flex items-center justify-center rounded-full hover-lift">
-                <Github className="w-5 h-5 text-white" />
-              </div>
-              <div className="gradient-button-variant w-10 h-10 flex items-center justify-center rounded-full hover-lift">
-                <Linkedin className="w-5 h-5 text-white" />
-              </div>
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 text-purple-400 hover:text-purple-300">
+                <Twitter className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 text-blue-400 hover:text-blue-300">
+                <Facebook className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 text-white hover:text-white/80">
+                <Github className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 text-blue-500 hover:text-blue-400">
+                <Linkedin className="w-5 h-5" />
+              </Button>
             </div>
           </div>
           
@@ -40,21 +41,15 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white">Contáctanos</h4>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-white/60 justify-center md:justify-start hover:text-purple-400 transition-colors group">
-                <div className="gradient-button-variant w-6 h-6 flex items-center justify-center rounded-full">
-                  <MapPin className="w-3 h-3 text-white" />
-                </div>
+                <MapPin className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
                 <span>San José, Costa Rica</span>
               </li>
               <li className="flex items-center gap-2 text-white/60 justify-center md:justify-start group">
-                <div className="gradient-button w-6 h-6 flex items-center justify-center rounded-full">
-                  <Mail className="w-3 h-3 text-white" />
-                </div>
+                <Mail className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
                 <a href="mailto:info@nexadigitalcr.com" className="hover:text-purple-400 transition-colors">info@nexadigitalcr.com</a>
               </li>
               <li className="flex items-center gap-2 text-white/60 justify-center md:justify-start group">
-                <div className="gradient-button w-6 h-6 flex items-center justify-center rounded-full">
-                  <Phone className="w-3 h-3 text-white" />
-                </div>
+                <Phone className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
                 <a href="tel:+50687823154" className="hover:text-purple-400 transition-colors">+506 8782-3154</a>
               </li>
             </ul>
