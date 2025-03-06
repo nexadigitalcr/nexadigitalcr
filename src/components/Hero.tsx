@@ -24,11 +24,11 @@ const Hero = () => {
             <div className="flex gap-4 flex-wrap">
               <InteractiveHoverButton 
                 text="Consulta Gratis" 
-                className="w-auto px-6 py-3 text-base bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:opacity-90 border-none shadow-lg shadow-purple-700/20"
+                className="w-auto px-6 py-3 text-base bg-white text-black hover:text-white border-none shadow-lg shadow-purple-700/20"
               />
               <InteractiveHoverButton 
                 text="Asistente AI" 
-                className="w-auto px-6 py-3 text-base glass-effect hover:bg-white/10 border border-purple-500/30"
+                className="w-auto px-6 py-3 text-base bg-gray-200 text-black hover:bg-white hover:text-black border border-purple-500/30"
               />
             </div>
           </div>
