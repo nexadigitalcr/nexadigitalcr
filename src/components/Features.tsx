@@ -1,9 +1,11 @@
+
 import { Card } from "@/components/ui/card";
 import { Wallet, Shield, CreditCard } from "lucide-react";
+
 const Features = () => {
   const features = [{
     icon: <Wallet className="w-6 h-6 text-white" />,
-    title: "Mobile Banking",
+    title: "Nexus AI Solutions",
     description: "Manage your finances on the go with our secure mobile banking platform"
   }, {
     icon: <Shield className="w-6 h-6 text-white" />,
@@ -14,6 +16,7 @@ const Features = () => {
     title: "Digital Cards",
     description: "Virtual and physical cards with advanced control features"
   }];
+  
   return <div className="py-20 px-4 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
@@ -39,4 +42,5 @@ const Features = () => {
       </div>
     </div>;
 };
+
 export default Features;
