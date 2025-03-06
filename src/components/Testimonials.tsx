@@ -1,10 +1,11 @@
+
 import { Card } from "@/components/ui/card";
 import { MessageSquare } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [{
     quote: "Nexa Digital nos ayudó a conectar con nuestros clientes de manera innovadora. Su experiencia en IA y desarrollo digital nos permitió modernizar nuestras operaciones y mejorar la experiencia de nuestros viajeros.",
-    author: "Sarah Johnson",
+    author: "Jose Mendez",
     role: "Business Owner"
   }, {
     quote: "This app has completely transformed how I manage my finances.",
