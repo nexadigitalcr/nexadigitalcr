@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { SplineSceneBasic } from "@/components/ui/code.demo";
 
 const Hero = () => {
   return (
@@ -32,13 +33,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
-            <img 
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1288&auto=format&fit=crop"
-              alt="Banking App"
-              className="w-full h-auto"
-            />
-          </div>
+          <SplineSceneBasic />
           <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
         </div>
       </div>
