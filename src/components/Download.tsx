@@ -15,11 +15,11 @@ const Download = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <InteractiveHoverButton 
               text="Contáctanos" 
-              className="w-auto px-8 py-6 text-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:opacity-90 shadow-lg shadow-purple-700/20 mx-auto sm:mx-0"
+              className="w-auto px-6 py-3 text-base bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:opacity-90 shadow-lg shadow-purple-700/20 mx-auto sm:mx-0"
             />
             <InteractiveHoverButton 
               text="Asistente AI" 
-              className="w-auto px-8 py-6 text-lg glass-effect hover:bg-white/10 border border-purple-500/30 mx-auto sm:mx-0"
+              className="w-auto px-6 py-3 text-base glass-effect hover:bg-white/10 border border-purple-500/30 mx-auto sm:mx-0"
             />
           </div>
         </div>
