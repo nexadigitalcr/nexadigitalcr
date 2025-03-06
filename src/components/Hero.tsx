@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Sparkles } from "lucide-react";
+import { MessageSquare, Sparkles, Server, Code, Bot } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
 
 const Hero = () => {
@@ -31,18 +31,18 @@ const Hero = () => {
                 Asistente AI
               </Button>
             </div>
-            <div className="grid grid-cols-3 gap-8 pt-8">
-              <div>
-                <div className="text-3xl font-bold text-white">5000+</div>
-                <div className="text-white/60">Active users</div>
+            <div className="flex flex-wrap gap-8 pt-6 items-center">
+              <div className="flex items-center space-x-2 hover-lift group">
+                <Bot className="w-6 h-6 text-purple-400 group-hover:text-purple-300 transition-colors" />
+                <span className="text-white/70 group-hover:text-white transition-colors text-sm font-medium">Open AI</span>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-white">30.3k</div>
-                <div className="text-white/60">Download</div>
+              <div className="flex items-center space-x-2 hover-lift group">
+                <Server className="w-6 h-6 text-purple-400 group-hover:text-purple-300 transition-colors" />
+                <span className="text-white/70 group-hover:text-white transition-colors text-sm font-medium">Hostinger</span>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-white">1200+</div>
-                <div className="text-white/60">Reviews</div>
+              <div className="flex items-center space-x-2 hover-lift group">
+                <Code className="w-6 h-6 text-purple-400 group-hover:text-purple-300 transition-colors" />
+                <span className="text-white/70 group-hover:text-white transition-colors text-sm font-medium">Lovable</span>
               </div>
             </div>
           </div>
