@@ -1,18 +1,18 @@
 
 import { Card } from "@/components/ui/card";
-import { Wallet, Shield, CreditCard } from "lucide-react";
+import { Zap, Palette, Rocket } from "lucide-react";
 
 const Features = () => {
   const features = [{
-    icon: <Wallet className="w-6 h-6 text-white" />,
+    icon: <Zap className="w-6 h-6 text-purple-400" />,
     title: "Nexus AI Solutions",
     description: "Soluciones con Inteligencia Artificial avanzada para revolucionar tu negocio"
   }, {
-    icon: <Shield className="w-6 h-6 text-white" />,
+    icon: <Palette className="w-6 h-6 text-pink-400" />,
     title: "Diseño Web",
     description: "Diseño Web Personalizado que transformara tu presencia digital"
   }, {
-    icon: <CreditCard className="w-6 h-6 text-white" />,
+    icon: <Rocket className="w-6 h-6 text-blue-400" />,
     title: "Emprendedores Turísticos",
     description: "¿Tienes una idea y no sabes por dónde empezar? Te ayudamos a convertirla en realidad."
   }];
@@ -26,7 +26,7 @@ const Features = () => {
           </div>
           <div className="grid gap-6">
             {features.map((feature, index) => <Card key={index} className="p-6 hover-lift glass-effect flex items-start gap-4 group transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-black/80 flex items-center justify-center group-hover:scale-110 transition-all">
                   {feature.icon}
                 </div>
                 <div>

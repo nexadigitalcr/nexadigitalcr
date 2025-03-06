@@ -34,7 +34,7 @@ export default {
           foreground: "#141413",
         },
         accent: {
-          DEFAULT: "#8989DE",
+          DEFAULT: "#8B5CF6", // Cambiado a un violeta más vibrante
           foreground: "#FFFFFF",
         },
         muted: {

@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { MessageSquare } from "lucide-react";
+import { MessageSquare, Sparkles } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
 
 const Hero = () => {
@@ -21,10 +21,16 @@ const Hero = () => {
             <p className="text-lg text-white/80 max-w-xl">
               El turismo está evolucionando. En Nexa Digital creamos soluciones con inteligencia artificial y diseño web personalizado para llevar tu negocio al siguiente nivel. ¿Tienes una idea y no sabes por dónde empezar? Te ayudamos a convertirla en realidad.
             </p>
-            <Button className="px-8 py-6 text-lg bg-white text-black hover:bg-white/90 flex items-center gap-2">
-              <MessageSquare className="w-5 h-5" />
-              Consulta Gratis
-            </Button>
+            <div className="flex gap-4 flex-wrap">
+              <Button className="px-8 py-6 text-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:opacity-90 flex items-center gap-2 border-none shadow-lg shadow-purple-700/20">
+                <MessageSquare className="w-5 h-5" />
+                Consulta Gratis
+              </Button>
+              <Button className="px-8 py-6 text-lg glass-effect hover:bg-white/10 flex items-center gap-2 border border-purple-500/30">
+                <Sparkles className="w-5 h-5 text-purple-400" />
+                Asistente AI
+              </Button>
+            </div>
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div>
                 <div className="text-3xl font-bold text-white">5000+</div>

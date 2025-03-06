@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { MessageSquare, ArrowRight } from "lucide-react";
+import { MessageSquare, ArrowRight, Star } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [{
@@ -25,22 +25,29 @@ const Testimonials = () => {
       <h2 className="text-4xl font-bold text-white text-center mb-4">¿Qué dicen Nuestros Clientes?</h2>
       <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">Empresas turísticas que han transformado su presencia digital con nuestras soluciones</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {testimonials.map((testimonial, index) => <Card key={index} className="p-6 hover-lift glass-effect">
-          <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
-            <MessageSquare className="w-6 h-6 text-white" />
-          </div>
-          <p className="text-white/80 mb-4 italic">{testimonial.quote}</p>
-          <div className="text-white font-semibold">{testimonial.author}</div>
-          <div className="text-white/60 text-sm mb-4">{testimonial.role}</div>
-          <a 
-            href={testimonial.url} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-flex items-center text-accent hover:text-accent/80 transition-colors"
-          >
-            Visita el sitio <ArrowRight className="w-4 h-4 ml-2" />
-          </a>
-        </Card>)}
+        {testimonials.map((testimonial, index) => (
+          <Card key={index} className="p-6 hover-lift glass-effect group">
+            <div className="flex mb-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+              <MessageSquare className="w-6 h-6 text-white" />
+            </div>
+            <p className="text-white/80 mb-4 italic">{testimonial.quote}</p>
+            <div className="text-white font-semibold">{testimonial.author}</div>
+            <div className="text-white/60 text-sm mb-4">{testimonial.role}</div>
+            <a 
+              href={testimonial.url} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors"
+            >
+              Visita el sitio <ArrowRight className="w-4 h-4 ml-2" />
+            </a>
+          </Card>
+        ))}
       </div>
     </div>
   </div>;
