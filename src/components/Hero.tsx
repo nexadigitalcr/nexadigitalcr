@@ -5,7 +5,7 @@ import { SplineSceneBasic } from "@/components/ui/code.demo";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen relative bg-black/[0.96]">
+    <div className="min-h-screen relative">
       {/* 3D Scene as background */}
       <div className="absolute inset-0 w-full h-full">
         <SplineSceneBasic />
