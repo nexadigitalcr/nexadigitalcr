@@ -13,7 +13,7 @@ const Features = () => {
     description: "Diseño Web Personalizado que transformara tu presencia digital"
   }, {
     icon: <CreditCard className="w-6 h-6 text-white" />,
-    title: "Digital Cards",
+    title: "Emprendedores Turísticos",
     description: "Virtual and physical cards with advanced control features"
   }];
   
