@@ -10,7 +10,7 @@ const Features = () => {
   }, {
     icon: <Shield className="w-6 h-6 text-white" />,
     title: "Diseño Web",
-    description: "Bank-grade security for all your transactions and personal data"
+    description: "Diseño Web Personalizado que transformara tu presencia digital"
   }, {
     icon: <CreditCard className="w-6 h-6 text-white" />,
     title: "Digital Cards",
