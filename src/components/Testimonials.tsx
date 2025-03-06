@@ -8,9 +8,9 @@ const Testimonials = () => {
     author: "Jose Mendez",
     role: "DMC Passport Adventure"
   }, {
-    quote: "This app has completely transformed how I manage my finances.",
-    author: "Michael Chen",
-    role: "Software Engineer"
+    quote: "Gracias a Nexa Digital, logramos expandir nuestra visibilidad en el sector del turismo inclusivo. Su enfoque en estrategias digitales y tecnología nos ha permitido llegar a más personas y hacer del turismo una experiencia accesible para todos.",
+    author: "Travel Advisor Costa Rica",
+    role: "Turismo Inclusivo"
   }, {
     quote: "Incredible user experience. Everything just works seamlessly.",
     author: "Emma Davis",
