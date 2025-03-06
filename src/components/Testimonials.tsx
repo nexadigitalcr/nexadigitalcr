@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { MessageSquare } from "lucide-react";
+import { MessageSquare, ArrowRight } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [{
@@ -29,7 +29,10 @@ const Testimonials = () => {
           </div>
           <p className="text-white/80 mb-4 italic">{testimonial.quote}</p>
           <div className="text-white font-semibold">{testimonial.author}</div>
-          <div className="text-white/60 text-sm">{testimonial.role}</div>
+          <div className="text-white/60 text-sm mb-4">{testimonial.role}</div>
+          <a href="#" className="inline-flex items-center text-accent hover:text-accent/80 transition-colors">
+            Visita el sitio <ArrowRight className="w-4 h-4 ml-2" />
+          </a>
         </Card>)}
       </div>
     </div>
