@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
 
 const Hero = () => {
@@ -15,8 +15,8 @@ const Hero = () => {
             El turismo está evolucionando. En Nexa Digital creamos soluciones con inteligencia artificial y diseño web personalizado para llevar tu negocio al siguiente nivel. ¿Tienes una idea y no sabes por dónde empezar? Te ayudamos a convertirla en realidad.
           </p>
           <Button className="px-8 py-6 text-lg bg-white text-black hover:bg-white/90 flex items-center gap-2">
-            <Download className="w-5 h-5" />
-            Download Application
+            <MessageSquare className="w-5 h-5" />
+            Consulta Gratis
           </Button>
           <div className="grid grid-cols-3 gap-8 pt-8">
             <div>
