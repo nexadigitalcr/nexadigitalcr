@@ -1,10 +1,10 @@
+
 import { Facebook, Twitter, Linkedin, MapPin, Mail, Phone, Github } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
     <footer className="py-20 px-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-4 text-center md:text-left">
