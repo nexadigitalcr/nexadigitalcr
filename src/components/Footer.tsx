@@ -1,4 +1,5 @@
-import { Github, Twitter, Linkedin } from "lucide-react";
+
+import { Github, Twitter, Linkedin, MapPin, Mail, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
     <footer className="py-20 px-4 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-white">Nexa Digital</h3>
             <p className="text-white/60">
@@ -26,32 +27,29 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Product</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Features</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Security</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Business</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Enterprise</a></li>
-            </ul>
-          </div>
-          
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Company</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Press</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Blog</a></li>
-            </ul>
-          </div>
-          
-          <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Legal</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Terms</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Privacy</a></li>
+              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Términos</a></li>
+              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Privacidad</a></li>
               <li><a href="#" className="text-white/60 hover:text-white transition-colors">Cookies</a></li>
-              <li><a href="#" className="text-white/60 hover:text-white transition-colors">Licenses</a></li>
+            </ul>
+          </div>
+          
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white">Contáctanos</h4>
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2 text-white/60">
+                <MapPin className="w-4 h-4" />
+                <span>San José, Costa Rica</span>
+              </li>
+              <li className="flex items-center gap-2 text-white/60">
+                <Mail className="w-4 h-4" />
+                <a href="mailto:info@nexadigitalcr.com" className="hover:text-white transition-colors">info@nexadigitalcr.com</a>
+              </li>
+              <li className="flex items-center gap-2 text-white/60">
+                <Phone className="w-4 h-4" />
+                <a href="tel:+50687823154" className="hover:text-white transition-colors">+506 8782-3154</a>
+              </li>
             </ul>
           </div>
         </div>
