@@ -1,11 +1,8 @@
-
 import { MessageSquare, Sparkles } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
 import { GradientButton } from "@/components/ui/gradient-button";
-
 const Hero = () => {
-  return (
-    <div className="min-h-screen relative">
+  return <div className="min-h-screen relative">
       {/* 3D Scene as background */}
       <div className="absolute inset-0 w-full h-full">
         <SplineSceneBasic />
@@ -14,7 +11,7 @@ const Hero = () => {
       {/* Content overlay */}
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4 pt-0">
         <div className="max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 mx-0 px-0 py-[75px]">
             <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
               Nexa Digital
             </h1>
@@ -34,11 +31,7 @@ const Hero = () => {
             
             <div className="flex justify-center pt-10">
               <div className="animate-float w-24 h-24 transition-all duration-500 hover:scale-110">
-                <img 
-                  src="/lovable-uploads/5f4285ef-ac2d-4529-895b-5eecc467ada2.png" 
-                  alt="Logo Nexa Digital" 
-                  className="w-full h-full"
-                />
+                
               </div>
             </div>
           </div>
@@ -47,8 +40,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Hero;
