@@ -11,7 +11,7 @@ const Hero = () => {
       {/* Content overlay */}
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4 pt-0">
         <div className="max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 mx-0 px-0 py-[75px]">
+          <div className="space-y-8 mx-0 px-0 py-[154px]">
             <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
               Nexa Digital
             </h1>
