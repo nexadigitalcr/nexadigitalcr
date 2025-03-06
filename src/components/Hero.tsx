@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Sparkles, Server, Code, Bot } from "lucide-react";
+import { MessageSquare, Sparkles, CircleUserRound, Cloud, Code2 } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
 
 const Hero = () => {
@@ -31,18 +31,15 @@ const Hero = () => {
                 Asistente AI
               </Button>
             </div>
-            <div className="flex flex-wrap gap-8 pt-6 items-center">
-              <div className="flex items-center space-x-2 hover-lift group">
-                <Bot className="w-6 h-6 text-purple-400 group-hover:text-purple-300 transition-colors" />
-                <span className="text-white/70 group-hover:text-white transition-colors text-sm font-medium">Open AI</span>
+            <div className="flex flex-wrap gap-12 pt-6 items-center justify-center">
+              <div className="hover-lift group">
+                <CircleUserRound className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
               </div>
-              <div className="flex items-center space-x-2 hover-lift group">
-                <Server className="w-6 h-6 text-purple-400 group-hover:text-purple-300 transition-colors" />
-                <span className="text-white/70 group-hover:text-white transition-colors text-sm font-medium">Hostinger</span>
+              <div className="hover-lift group">
+                <Cloud className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
               </div>
-              <div className="flex items-center space-x-2 hover-lift group">
-                <Code className="w-6 h-6 text-purple-400 group-hover:text-purple-300 transition-colors" />
-                <span className="text-white/70 group-hover:text-white transition-colors text-sm font-medium">Lovable</span>
+              <div className="hover-lift group">
+                <Code2 className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
               </div>
             </div>
           </div>
