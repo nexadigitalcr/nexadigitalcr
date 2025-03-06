@@ -32,14 +32,14 @@ const Hero = () => {
               </GradientButton>
             </div>
             <div className="flex flex-wrap gap-12 pt-6 items-center justify-center">
-              <div className="hover-lift group">
-                <CircleUserRound className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
+              <div className="gradient-button w-16 h-16 flex items-center justify-center rounded-full hover-lift">
+                <CircleUserRound className="w-8 h-8 text-white transition-colors" />
               </div>
-              <div className="hover-lift group">
-                <Cloud className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
+              <div className="gradient-button w-16 h-16 flex items-center justify-center rounded-full hover-lift">
+                <Cloud className="w-8 h-8 text-white transition-colors" />
               </div>
-              <div className="hover-lift group">
-                <Code2 className="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors mx-auto" />
+              <div className="gradient-button-variant w-16 h-16 flex items-center justify-center rounded-full hover-lift">
+                <Code2 className="w-8 h-8 text-white transition-colors" />
               </div>
             </div>
           </div>
