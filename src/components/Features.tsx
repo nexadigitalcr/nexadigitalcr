@@ -14,7 +14,7 @@ const Features = () => {
   }, {
     icon: <CreditCard className="w-6 h-6 text-white" />,
     title: "Emprendedores Turísticos",
-    description: "Virtual and physical cards with advanced control features"
+    description: "¿Tienes una idea y no sabes por dónde empezar? Te ayudamos a convertirla en realidad."
   }];
   
   return <div className="py-20 px-4 bg-background relative overflow-hidden">
