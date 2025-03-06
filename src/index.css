@@ -19,6 +19,9 @@
     @apply bg-background text-foreground antialiased;
     background-color: #000000;
   }
+  html {
+    background-color: #000000;
+  }
 }
 
 .glass-effect {
