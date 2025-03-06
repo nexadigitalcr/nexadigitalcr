@@ -6,15 +6,18 @@ const Testimonials = () => {
   const testimonials = [{
     quote: "Nexa Digital nos ayudó a conectar con nuestros clientes de manera innovadora. Su experiencia en IA y desarrollo digital nos permitió modernizar nuestras operaciones y mejorar la experiencia de nuestros viajeros.",
     author: "Jose Mendez",
-    role: "DMC Passport Adventure"
+    role: "DMC Passport Adventure",
+    url: "https://dmcpassportadventure.com/"
   }, {
     quote: "Gracias a Nexa Digital, logramos expandir nuestra visibilidad en el sector del turismo inclusivo. Su enfoque en estrategias digitales y tecnología nos ha permitido llegar a más personas y hacer del turismo una experiencia accesible para todos.",
     author: "Travel Advisor Costa Rica",
-    role: "Turismo Inclusivo"
+    role: "Turismo Inclusivo",
+    url: "https://traveladvisor.com/"
   }, {
     quote: "La transformación digital que Nexa Digital nos brindó ha sido clave para nuestra empresa. Desde el diseño web hasta la automatización con IA, han llevado nuestro servicio a un nuevo nivel.",
     author: "Alonso Rodriguez",
-    role: "Bravo Rent A Car"
+    role: "Bravo Rent A Car",
+    url: "https://bravorentacarcr.com/"
   }];
 
   return <div className="py-20 px-4 bg-background relative overflow-hidden">
@@ -30,7 +33,12 @@ const Testimonials = () => {
           <p className="text-white/80 mb-4 italic">{testimonial.quote}</p>
           <div className="text-white font-semibold">{testimonial.author}</div>
           <div className="text-white/60 text-sm mb-4">{testimonial.role}</div>
-          <a href="#" className="inline-flex items-center text-accent hover:text-accent/80 transition-colors">
+          <a 
+            href={testimonial.url} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center text-accent hover:text-accent/80 transition-colors"
+          >
             Visita el sitio <ArrowRight className="w-4 h-4 ml-2" />
           </a>
         </Card>)}
