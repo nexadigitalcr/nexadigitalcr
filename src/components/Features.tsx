@@ -1,7 +1,5 @@
-
 import { Card } from "@/components/ui/card";
 import { Wallet, Shield, CreditCard } from "lucide-react";
-
 const Features = () => {
   const features = [{
     icon: <Wallet className="w-6 h-6 text-white" />,
@@ -16,16 +14,13 @@ const Features = () => {
     title: "Emprendedores Turísticos",
     description: "¿Tienes una idea y no sabes por dónde empezar? Te ayudamos a convertirla en realidad."
   }];
-  
   return <div className="py-20 px-4 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="font-bold text-white text-6xl">Nuestros Servicios</h2>
-            <p className="text-xl text-white/60">
-              Simple transfers, payments for utilities, functional statements, card settings, for which you used to have to go to the branch online-banking
-            </p>
+            <p className="text-xl text-white/60">Fusionamos Inteligencia Artificial y nuestra experiencia en turismo para desarrollar soluciones innovadoras</p>
           </div>
           <div className="grid gap-6">
             {features.map((feature, index) => <Card key={index} className="p-6 hover-lift glass-effect flex items-start gap-4 group transition-all duration-300">
@@ -42,5 +37,4 @@ const Features = () => {
       </div>
     </div>;
 };
-
 export default Features;
