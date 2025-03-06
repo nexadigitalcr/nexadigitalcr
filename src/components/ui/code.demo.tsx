@@ -13,7 +13,7 @@ export function SplineSceneBasic() {
       <div className="relative z-0 w-full h-full">
         <SplineScene 
           scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-          className="w-full h-full scale-125"
+          className="w-full h-full scale-125 translate-x-[25%] md:translate-x-[40%]"
         />
       </div>
     </div>
