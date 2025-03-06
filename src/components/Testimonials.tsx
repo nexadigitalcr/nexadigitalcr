@@ -32,7 +32,7 @@ const Testimonials = () => {
                 <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
               ))}
             </div>
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+            <div className="gradient-button w-12 h-12 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
               <MessageSquare className="w-6 h-6 text-white" />
             </div>
             <p className="text-white/80 mb-4 italic">{testimonial.quote}</p>
