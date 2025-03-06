@@ -9,7 +9,7 @@ const Features = () => {
     description: "Soluciones con Inteligencia Artificial avanzada para revolucionar tu negocio"
   }, {
     icon: <Shield className="w-6 h-6 text-white" />,
-    title: "Secure Transactions",
+    title: "Diseño Web",
     description: "Bank-grade security for all your transactions and personal data"
   }, {
     icon: <CreditCard className="w-6 h-6 text-white" />,
