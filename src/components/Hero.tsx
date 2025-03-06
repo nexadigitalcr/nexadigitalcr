@@ -35,7 +35,6 @@ const Hero = () => {
         </div>
         <div className="relative">
           <SplineSceneBasic />
-          <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
         </div>
       </div>
     </div>

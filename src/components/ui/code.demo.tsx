@@ -6,7 +6,7 @@ import { Spotlight } from "@/components/ui/spotlight"
  
 export function SplineSceneBasic() {
   return (
-    <div className="w-full h-[600px] relative overflow-hidden">
+    <div className="w-full h-[600px] relative">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
       />
