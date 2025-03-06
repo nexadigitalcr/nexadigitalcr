@@ -12,9 +12,9 @@ const Testimonials = () => {
     author: "Travel Advisor Costa Rica",
     role: "Turismo Inclusivo"
   }, {
-    quote: "Incredible user experience. Everything just works seamlessly.",
-    author: "Emma Davis",
-    role: "Financial Analyst"
+    quote: "La transformación digital que Nexa Digital nos brindó ha sido clave para nuestra empresa. Desde el diseño web hasta la automatización con IA, han llevado nuestro servicio a un nuevo nivel.",
+    author: "Alonso Rodriguez",
+    role: "Bravo Rent A Car"
   }];
 
   return <div className="py-20 px-4 bg-background relative overflow-hidden">
