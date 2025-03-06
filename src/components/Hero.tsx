@@ -1,10 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 pt-20 bg-black/[0.96]">
+    <div className="min-h-screen flex items-center justify-center px-4 pt-0 bg-black/[0.96]">
       <div className="max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
