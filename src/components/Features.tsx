@@ -19,7 +19,7 @@ const Features = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-white">Nuestros Servicios</h2>
+            <h2 className="font-bold text-white text-6xl">Nuestros Servicios</h2>
             <p className="text-xl text-white/60">
               Simple transfers, payments for utilities, functional statements, card settings, for which you used to have to go to the branch online-banking
             </p>
