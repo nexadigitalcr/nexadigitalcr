@@ -1,7 +1,7 @@
 
 'use client'
 
-import { Suspense, lazy, useEffect, useState } from 'react'
+import { Suspense, lazy } from 'react'
 const Spline = lazy(() => import('@splinetool/react-spline'))
 
 interface SplineSceneProps {
@@ -10,13 +10,6 @@ interface SplineSceneProps {
 }
 
 export function SplineScene({ scene, className }: SplineSceneProps) {
-  const [isClient, setIsClient] = useState(false)
-
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
-
-  // Solo renderiza en el cliente para evitar problemas de SSR
   return (
     <Suspense 
       fallback={
@@ -25,12 +18,10 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
         </div>
       }
     >
-      {isClient && (
-        <Spline
-          scene={scene}
-          className={className}
-        />
-      )}
+      <Spline
+        scene={scene}
+        className={className}
+      />
     </Suspense>
   )
 }

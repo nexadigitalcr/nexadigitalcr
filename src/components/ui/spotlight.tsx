@@ -12,8 +12,8 @@ type SpotlightProps = {
 
 export function Spotlight({
   className,
-  size = 400, // Aumentado el tamaño por defecto para mayor visibilidad
-  springOptions = { bounce: 0.25, damping: 25 }, // Añadido más rebote para mejorar el efecto
+  size = 200,
+  springOptions = { bounce: 0 },
 }: SpotlightProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -49,17 +49,16 @@ export function Spotlight({
   useEffect(() => {
     if (!parentElement) return;
 
-    // Forzar isHovered a true para que siempre muestre la luz
-    setIsHovered(true);
-    
     parentElement.addEventListener('mousemove', handleMouseMove);
     parentElement.addEventListener('mouseenter', () => setIsHovered(true));
-    parentElement.addEventListener('mouseleave', () => setIsHovered(true)); // Mantenerlo siempre visible
+    parentElement.addEventListener('mouseleave', () => setIsHovered(false));
 
     return () => {
       parentElement.removeEventListener('mousemove', handleMouseMove);
       parentElement.removeEventListener('mouseenter', () => setIsHovered(true));
-      parentElement.removeEventListener('mouseleave', () => setIsHovered(true));
+      parentElement.removeEventListener('mouseleave', () =>
+        setIsHovered(false)
+      );
     };
   }, [parentElement, handleMouseMove]);
 
@@ -67,8 +66,8 @@ export function Spotlight({
     <motion.div
       ref={containerRef}
       className={cn(
-        'pointer-events-none absolute rounded-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops),transparent_70%)] blur-xl transition-opacity duration-200',
-        'from-purple-400 via-purple-300 to-zinc-200', // Cambiado a tonos morados para que combine con el tema
+        'pointer-events-none absolute rounded-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops),transparent_80%)] blur-xl transition-opacity duration-200',
+        'from-zinc-50 via-zinc-100 to-zinc-200',
         isHovered ? 'opacity-100' : 'opacity-0',
         className
       )}
@@ -77,7 +76,6 @@ export function Spotlight({
         height: size,
         left: spotlightLeft,
         top: spotlightTop,
-        zIndex: 1,
       }}
     />
   );
