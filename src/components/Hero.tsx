@@ -1,5 +1,5 @@
 
-import { MessageSquare, Sparkles, CircleUserRound, Cloud, Code2 } from "lucide-react";
+import { MessageSquare, Sparkles } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
 import { GradientButton } from "@/components/ui/gradient-button";
 
@@ -31,15 +31,35 @@ const Hero = () => {
                 Asistente AI
               </GradientButton>
             </div>
-            <div className="flex flex-wrap gap-12 pt-6 items-center justify-center">
+            
+            <div className="flex flex-wrap gap-8 pt-10 items-center justify-center">
               <div className="gradient-button w-16 h-16 flex items-center justify-center rounded-full hover-lift">
-                <CircleUserRound className="w-8 h-8 text-white transition-colors" />
+                <img 
+                  src="/lovable-uploads/ff2e2994-ddaf-45e4-9635-4271c7fecaba.png" 
+                  alt="Logo circular negro" 
+                  className="w-8 h-8 transition-colors"
+                />
               </div>
               <div className="gradient-button w-16 h-16 flex items-center justify-center rounded-full hover-lift">
-                <Cloud className="w-8 h-8 text-white transition-colors" />
+                <img 
+                  src="/lovable-uploads/57b5cb3b-6f7d-4f29-90a2-675e00f90bb8.png" 
+                  alt="Logo H morado" 
+                  className="w-8 h-8 transition-colors"
+                />
               </div>
               <div className="gradient-button-variant w-16 h-16 flex items-center justify-center rounded-full hover-lift">
-                <Code2 className="w-8 h-8 text-white transition-colors" />
+                <img 
+                  src="/lovable-uploads/01ff2751-3353-4c38-a093-9e9fc599d87b.png" 
+                  alt="Corazón multicolor" 
+                  className="w-8 h-8 transition-colors"
+                />
+              </div>
+              <div className="gradient-button-variant w-16 h-16 flex items-center justify-center rounded-full hover-lift">
+                <img 
+                  src="/lovable-uploads/ff4151cb-9774-487a-b0dd-60d68d589cf8.png" 
+                  alt="Logo N morado" 
+                  className="w-8 h-8 transition-colors"
+                />
               </div>
             </div>
           </div>
