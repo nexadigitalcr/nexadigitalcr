@@ -1,6 +1,9 @@
+
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Sparkles, CircleUserRound, Cloud, Code2 } from "lucide-react";
+import { MessageSquare, Sparkles } from "lucide-react";
 import { SplineSceneBasic } from "@/components/ui/code.demo";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
+
 const Hero = () => {
   return <div className="min-h-screen relative">
       {/* 3D Scene as background */}
@@ -19,16 +22,15 @@ const Hero = () => {
               El turismo está evolucionando. En Nexa Digital creamos soluciones con inteligencia artificial y diseño web personalizado para llevar tu negocio al siguiente nivel. ¿Tienes una idea y no sabes por dónde empezar? Te ayudamos a convertirla en realidad.
             </p>
             <div className="flex gap-4 flex-wrap">
-              <Button className="px-8 py-6 text-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:opacity-90 flex items-center gap-2 border-none shadow-lg shadow-purple-700/20">
-                <MessageSquare className="w-5 h-5" />
-                Consulta Gratis
-              </Button>
-              <Button className="px-8 py-6 text-lg glass-effect hover:bg-white/10 flex items-center gap-2 border border-purple-500/30">
-                <Sparkles className="w-5 h-5 text-purple-400" />
-                Asistente AI
-              </Button>
+              <InteractiveHoverButton 
+                text="Consulta Gratis" 
+                className="w-auto px-8 py-6 text-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:opacity-90 border-none shadow-lg shadow-purple-700/20"
+              />
+              <InteractiveHoverButton 
+                text="Asistente AI" 
+                className="w-auto px-8 py-6 text-lg glass-effect hover:bg-white/10 border border-purple-500/30"
+              />
             </div>
-            
           </div>
           <div className="hidden md:block">
             {/* This div is just to maintain the grid layout */}
@@ -37,4 +39,5 @@ const Hero = () => {
       </div>
     </div>;
 };
+
 export default Hero;
