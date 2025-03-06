@@ -5,7 +5,7 @@ const Download = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">¿Listo para Transformar tu Negocio?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white">¿Listo para llevar tu negocio al siguiente nivel?</h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
             Download our app and experience the future of banking. Available on iOS and Android.
           </p>
